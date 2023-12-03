@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks/2
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "id": "1",
+  "title": "Hablar...",
+  "description": "No se que como arreglar esto..."
+}
+
+### 
+DELETE http://localhost:3000/api/tasks/1
+
+###
+PUT http://localhost:3000/api/tasks/2
+Content-Type: application/json
+
+{
+  "title": "Actualizando tarea"
+}
